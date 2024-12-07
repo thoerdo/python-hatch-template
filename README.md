@@ -24,7 +24,7 @@
 
     After that make sure to check for changes which might have to be added to git staging area
 
-## Setup
+## Initial setup
 
 1) Create a virtual Python environment and activate it
 

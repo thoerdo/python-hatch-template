@@ -1,5 +1,6 @@
 black
 gitlint
+hatch
 pre-commit
 pylint
 pytest
