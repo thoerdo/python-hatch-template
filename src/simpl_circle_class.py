@@ -17,6 +17,8 @@ class Circle:
     """
 
     def __init__(self, radius: int) -> None:
+        """ """
+
         assert radius > 0, "circle radius must be a positive number"
         self.radius = radius
 
