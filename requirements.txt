@@ -1,0 +1,4 @@
+black
+gitlint
+pre-commit
+pylint
