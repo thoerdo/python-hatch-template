@@ -11,7 +11,7 @@
 2)  Check *pytest* coverage
 
     ```bash
-    (.venv): python -m <package-name> --cov=arithmetic tests
+    (.venv): python -m pytest --cov=<package-name> tests
     ```
 
     Should by 100%, ensuring all source code is tests
