@@ -1,5 +1,6 @@
 import unittest
 
+import arithmetic.absolute
 import arithmetic.add
 import arithmetic.divide
 import arithmetic.multiply
@@ -7,6 +8,10 @@ import arithmetic.subtract
 
 
 class TestArithmetic(unittest.TestCase):
+    def test_absolute(self):
+        self.assertEqual(arithmetic.absolute.absolute(5), 5)
+        self.assertEqual(arithmetic.absolute.absolute(-5), 5)
+
     def test_addition(self):
         self.assertEqual(arithmetic.add.add(1, 2), 3)
 
@@ -18,3 +23,4 @@ class TestArithmetic(unittest.TestCase):
 
     def test_divide(self):
         self.assertEqual(arithmetic.divide.divide(4, 2), 2)
+        self.assertEqual(arithmetic.divide.divide(4, 0), 0)
