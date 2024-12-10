@@ -1,5 +1,4 @@
 build
 hatch
 pre-commit
-pylint
 tox
