@@ -2,27 +2,36 @@
 
 ## To be run before every commit
 
-1)  Run *pytest* to ensure all tests are properly executed
+1)  Run *tox* to ensure all tests, lintings etc. are properly executed and Sphinx docs are build
 
     ```bash
-    (.venv): python -m pytest
+    (.venv): tox
     ```
 
-2)  Check *pytest* coverage
+### Recommended: Run after staging your changes
+
+1) Check *pre-commit' hooks
 
     ```bash
-    (.venv): python -m pytest --cov=<package-name> tests
-    ```
-
-    Should by 100%, ensuring all source code is tests
-
-3) Check *pre-commit' hooks
-
-    ```bash
+    (.venv): git add <files to add to staging area>
     (.venv): pre-commit run --all-files
     ```
 
     After that make sure to check for changes which might have to be added to git staging area
+
+## Build the project
+
+1) Build the project in *development mode*
+
+    ```bash
+    (.venv): python3 -m pip install -e .
+    ```
+
+2) Build the release package
+
+    ```bash
+    (.venv): python3 -m build
+    ```
 
 ## Initial setup
 
