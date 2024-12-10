@@ -1,3 +1,4 @@
+fail_fast: true
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
@@ -5,10 +6,25 @@ repos:
     -   id: check-yaml
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
+
+# sort imports alphabetically and automatically separate into sections and by type
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+    - id: isort
+
+# liniting with different tools
 -   repo: https://github.com/psf/black
-    rev: 22.10.0
+    rev: 24.10.0
     hooks:
     -   id: black
+
+-   repo: https://github.com/PyCQA/flake8
+    rev: 7.1.0
+    hooks:
+    -   id: flake8
+        additional_dependencies: [flake8-bugbear==24.10.31]
+
 -   repo: local
     hooks:
     -   id: pylint
@@ -22,6 +38,7 @@ repos:
             "-rn", # Only display messages
             # "-sn", # Don't display the score
             ]
+
 -   repo: https://github.com/jorisroovers/gitlint
     rev:  v0.19.1
     hooks:
