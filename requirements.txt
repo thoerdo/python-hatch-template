@@ -1,7 +1,5 @@
-black
-gitlint
+build
 hatch
 pre-commit
 pylint
-pytest
-pytest-cov
+tox

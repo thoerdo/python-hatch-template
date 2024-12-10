@@ -53,6 +53,5 @@ docs = [
 packages = ["src/arithmetic"]
 
 [tool.pytest.ini_options]
-pythonpath = [
-  "src"
-]
+pythonpath = "src"
+addopts = "--cov=src tests/"
