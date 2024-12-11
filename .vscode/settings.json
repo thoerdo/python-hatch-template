@@ -1,0 +1,9 @@
+{
+    "pylint.showNotification" : "always",
+    "pylint.lintOnChange" : "true",
+    "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "analysis.languageServerMode": "full",
+  }
+}

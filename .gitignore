@@ -131,7 +131,10 @@ dmypy.json
 cov.xml
 
 # Editor config files
-.vscode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
 
 # DeepCode/Snyk
 .dccache

@@ -1,0 +1,20 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846
+	// for the documentation about the extensions.json format
+	"recommendations": [
+		"ms-python.python",
+        "ms-python.debugpy",
+        "ms-python.pylint",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "executablebookproject.myst-highlight",
+        "davidanson.vscode-markdownlint",
+        "yzhang.markdown-all-in-one",
+        "trond-snekvik.simple-rst",
+        "lextudio.restructuredtext",
+        "swyddfa.esbonio",
+        "mechatroner.rainbow-csv",
+        "mhutchie.git-graph",
+        "github.vscode-github-actions",
+	]
+}
