@@ -14,6 +14,7 @@
 
     ```bash
     (.venv): git add <files to add to staging area>
+    (.venv): pre-commit autoupdate
     (.venv): pre-commit run --all-files
     ```
 
