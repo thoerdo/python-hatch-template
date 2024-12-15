@@ -1,6 +1,9 @@
 {
-    "pylint.showNotification" : "always",
-    "pylint.lintOnChange" : "true",
+    "pylint.enabled": true,
+    "pylint.args": [
+      "--lintOnChange=true",
+      "showNotification=always"
+    ],
     "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
