@@ -8,5 +8,10 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
   },
-  "python.analysis.languageServerMode": "full"
+  "python.analysis.languageServerMode": "full",
+  "python.testing.pytestArgs": [
+    "src"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
 }
