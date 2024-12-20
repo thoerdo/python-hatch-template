@@ -81,11 +81,11 @@ html_theme = "sphinx_rtd_theme"
 # Show link to source on GitHUb
 html_context = {
     "display_github": True,
-    "github_host": "cc-github.bmwgroup.net",
-    "github_user": "ESDF",
-    "github_repo": "<repo>",
+    "github_host": "github.com",
+    "github_user": "thoerdo",
+    "github_repo": "python-hatch-template",
     "github_version": "main",
-    "conf_py_path": "/project-depot/",
+    "conf_py_path": "/docs/",
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
