@@ -1,4 +1,8 @@
 # pylint: skip-file
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath("../src"))
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -37,7 +41,12 @@ extensions = [
     "sphinx.ext.duration",  # durations report at the end of  Sphinx build
     "sphinx_rtd_theme",  # Better theme
     #  "sphinxcontrib.images",  # Allows showing tumbnail images
+    "sphinx.ext.autodoc",
+    "sphinx_autodoc_typehints",
 ]
+
+# The master toctree document.
+master_doc = "index"
 
 # MyST Configuration
 
