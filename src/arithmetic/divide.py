@@ -1,10 +1,22 @@
-def divide(x, y):
+"""
+This module provides a function to divide one number by another.
+"""
 
-    z = 0
 
-    try:
-        z = x / y
-        return z
-    except ZeroDivisionError as error:
-        print(error)
-        return 0
+def divide(a, b):
+    """
+    Divide one number by another.
+
+    Parameters:
+    a (int or float): The dividend.
+    b (int or float): The divisor.
+
+    Returns:
+    float: The result of the division.
+
+    Raises:
+    ValueError: If the divisor is zero.
+    """
+    if b == 0:
+        raise ValueError("Cannot divide by zero.")
+    return a / b
