@@ -33,12 +33,8 @@ class TestArithmetic(unittest.TestCase):
 
     def test_divide(self):
         self.assertEqual(arithmetic.divide.divide(4, 2), 2)
-        self.assertEqual(arithmetic.divide.divide(4, 0), 0)
+        self.assertRaises(ValueError, arithmetic.divide.divide, 4, 0)
         self.assertEqual(arithmetic.divide.divide(0, 4), 0)
         self.assertEqual(arithmetic.divide.divide(-4, 2), -2)
         self.assertEqual(arithmetic.divide.divide(4, -2), -2)
         self.assertEqual(arithmetic.divide.divide(-4, -2), 2)
-
-
-if __name__ == "__main__":
-    unittest.main()

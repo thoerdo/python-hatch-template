@@ -11,15 +11,15 @@ dependencies = [
 ]
 requires-python = ">=3.10"
 authors = [
-  { name="Thomas", email="me@thomas.com" },
+  { name="Thomas", email="thomas.donner@web.de" },
 ]
 maintainers = [
-  { name="Thomas", email="me@thomas.com" }
+  { name="Thomas", email="thomas.donner@web.de" }
 ]
 description = "A small example package"
 readme = "README.md"
 license = {file = "LICENSE"}
-keywords = ["example"]
+keywords = ["Python", "Packagin"]
 
 # Check: https://pypi.org/classifiers/
 classifiers = [
@@ -52,9 +52,15 @@ docs = [
 [tool.hatch.build.targets.wheel]
 packages = ["src/arithmetic"]
 
-[tool.pytest.ini_options]
-pythonpath = "src"
-addopts = "--cov=src tests"
+[tool.isort]
+profile = "black"
 
 [tool.black]
 line-length = 72
+
+[tool.flake8]
+max-line-length = 72
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+addopts = "--cov=src tests"
