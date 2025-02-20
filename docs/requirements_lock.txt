@@ -45,9 +45,11 @@ pyyaml==6.0.2
     # via myst-parser
 requests==2.32.3
     # via sphinx
+roman-numerals-py==3.0.0
+    # via sphinx
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==8.1.3
+sphinx==8.2.0
     # via
     #   -r docs/requirements.in
     #   myst-parser
